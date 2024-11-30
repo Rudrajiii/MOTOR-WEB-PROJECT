@@ -1,0 +1,74 @@
+/motor-store
+├── /motor_store          # Main Django project directory
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py           # Project-level URL configurations
+│   ├── asgi.py
+│   ├── wsgi.py
+│   └── __pycache__
+├── /apps                 # Directory for Django apps (e.g., motors, users)
+│   ├── /motors           # App for handling motor-related features
+│   │   ├── migrations    # Migration files for the motors app
+│   │   ├── static
+│   │   │   ├── motors
+│   │   │   │   ├── css   # SCSS compiled to CSS for this app
+│   │   │   │   ├── js    # JavaScript specific to the motors app
+│   │   │   │   └── images
+│   │   ├── templates
+│   │   │   ├── motors
+│   │   │   │   ├── motor_list.html
+│   │   │   │   ├── motor_details.html
+│   │   │   │   └── motor_card.html
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── models.py
+│   │   ├── tests.py
+│   │   ├── urls.py       # App-level URLs
+│   │   ├── views.py
+│   │   └── forms.py
+│   ├── /users            # App for authentication and user management
+│   │   ├── migrations
+│   │   ├── static
+│   │   │   ├── users
+│   │   │   │   ├── css
+│   │   │   │   ├── js
+│   │   │   │   └── images
+│   │   ├── templates
+│   │   │   ├── users
+│   │   │   │   ├── login.html
+│   │   │   │   ├── register.html
+│   │   │   │   └── profile.html
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── models.py
+│   │   ├── tests.py
+│   │   ├── urls.py
+│   │   ├── views.py
+│   │   └── forms.py
+├── /static               # Global static files
+│   ├── css               # Compiled SCSS files
+│   ├── js                # General JavaScript files
+│   └── images            # Shared images
+├── /templates            # Global templates
+│   ├── base.html         # Base template
+│   ├── home.html         # Homepage
+│   ├── about.html        # About page
+│   ├── contact.html      # Contact page
+│   └── products.html     # Products listing page
+├── /media                # User-uploaded files
+│   └── uploads
+├── /scss                 # SCSS source files
+│   ├── base.scss         # Base styles (e.g., typography, variables)
+│   ├── components        # Component-level styles
+│   │   ├── header.scss
+│   │   ├── footer.scss
+│   │   └── buttons.scss
+│   └── pages             # Page-specific styles
+│       ├── home.scss
+│       ├── about.scss
+│       ├── contact.scss
+│       └── products.scss
+├── manage.py             # Django management script
+├── requirements.txt      # Dependencies
+├── .gitignore
+└── README.md
